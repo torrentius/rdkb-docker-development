@@ -1,0 +1,14 @@
+services:
+  yocto-builder:
+    image: rdkb-yocto
+    container_name: rdkb-yocto-dev
+    volumes:
+      - ../build-workspace/rdkb-worspace:/builder/rdkb-workspace
+      - ../build-workspace/yocto-downloads:/builder/rdkb-workspace/downloads
+      - ../build-workspace/yocto-sstate-cache:/builder/rdkb-workspace/sstate-cache
+      - ~/.ssh:/builder/.ssh:ro
+
+    working_dir: /builder/rdkb-workspace
+    tty: true
+    stdin_open: true
+    user: builder
