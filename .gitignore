@@ -1,2 +1,3 @@
 # Ignore Yocto/Build working directories
 build-workspace/
+*-workspace
