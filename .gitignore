@@ -1,3 +1,5 @@
 # Ignore Yocto/Build working directories
 build-workspace/
 *-workspace
+# Ignorar todo el workspace de builds Yocto y sus subcarpetas
+/build-workspace/
