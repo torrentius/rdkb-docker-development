@@ -3,6 +3,8 @@ rdkb-docker-development
 # rdkb-dev
 # Building RDKB Yocto Docker Image
 
+TESTING
+
 Build the Docker image with:
 
 ```bash
